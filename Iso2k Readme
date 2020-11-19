@@ -1,0 +1,5 @@
+Iso2k Readme
+
+This directory contains the iso2k database in several forms, as well as sample code sets that demonstrate simple usage of the database in R, matlab and python. The datasets are available as LiPD files in the "iso2k_directory_LiPD" directory, or as a complete set as a zip file "iso2k1_0_0.zip". They are also provided as serializations in R ("iso2k1_0_0.Rdata"). matlab ("iso2k1_0_0.mat"), and python ("iso2k1_0_0.pkl").
+
+Citation: Konecky et al. (2020) The Iso2k Database: A global compilation of paleo-d18O and d2H records to aid understanding of Common Era climate
