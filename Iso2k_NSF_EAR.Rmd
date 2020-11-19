@@ -1,0 +1,45 @@
+---
+title: "Iso2k NSF EAR"
+author: "Matthew J. Berens"
+date: "11/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+options(scipen = 10, digits = 4) #Removes scientific notation
+library(magrittr)
+library(tidyverse)
+library(lipdR)
+load("iso2k1_0_0.RData")
+```
+
+## R Markdown
+Script name: Iso2k analysis for MJB NSF-EAR Postdoc Application
+
+Purpose of script: Filter records from full Iso2k database
+
+Script author: M. Berens
+
+Date updated: 2020-06-10
+
+
+Citation: Konecky et al. (2020) The Iso2k Database: A global compilation of paleo-d18O and d2H records to aid understanding of Common Era climate
+
+Database is available for download from https://doi.org/10.25921/57j8-vs18 or http://lipdverse.org/iso2k/current_version/
+
+
+```{r sorting}
+## extract all Iso2k UIDs
+TSids <- as.character(sapply(sTS, "[[", "paleoData_iso2kUI"))
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
